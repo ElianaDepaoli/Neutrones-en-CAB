@@ -12,7 +12,12 @@ Se usa el código raw2fits.py
 ### Modo de uso 
 $ python3 raw2fits.py /ruta_completa_conteniendo_los_archivos_a_procesar/*.*
 
-En PC @hipercandombe activar el entorno py3v1 donde está instalada la librería necesaria rawpy.
+### En PC @hipercandombe
+
+activar el entorno py3v1 donde está instalada la librería necesaria rawpy.
 
 eliana@hipercandombe:~$ source py3v1/bin/activate
+
+~/Soft/CMOS/raw2fits.py
+
 
