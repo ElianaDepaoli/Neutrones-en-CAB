@@ -27,8 +27,11 @@ Usage:
 
 Options:
   -s for saving the individual values of all the samples.
+  
   -i for saving a fits image file with the averaged pixels. It will be named "proc_<input filename>.fits".
+  
   -S for saving a fits image file with all the samples (-i must be used). It will be named "smpl_<input filename>.fits".
+  
   -n for NOT creating an output ROOT file. User must select '-i' or '-S' option.
   -w for ignoring the OS position and using the whole image as effective OS. ONLY works if image is mostly empty.
   -r raw mode. Raw image pixel values, no subtraction of the OS mean.
@@ -40,13 +43,19 @@ Options:
   -R <window radius> sets the radius of the running baseline window. Only meaningful when used with the -b option. 
 
   -B for computing a row-by-row baseline by fitting the 0-electron peak (new method). This option overrides most of the other options. 
+  
   -c for also fitting the column-by-column shifts when using the -B option. Ignored if there aren't enough rows for this to be useful. 
+  
   -g <gain> sets the gain assumed (ADU/e-/ssamp, default 1.0) when fitting the 0-electron peak when using the -B option.
+  
   -Q <quantile> sets the fraction of pixels discarded when fitting the 0-electron peak when using the -B option. Use a large value if many pixels have crosstalk. 
 
   -H if the first sample of a high-charge pixel is much bigger than the rest, use the first sample. 
+  
   -f ignore the first sample. 
+  
   -N ignore rows with a large number of noisy pixels (too many pixels in the tails of the 0e Gaussian). 
+  
   -p don't check the pixel counts (normally we error out if NPIX != NSAMP*NCOL*NROW). 
 
   -q quiet
